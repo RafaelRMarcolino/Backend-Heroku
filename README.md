@@ -1,4 +1,35 @@
-# Api_spring 
+# Api spring Heroku mysql
+Dependency maven Mysql
+````
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.29</version>
+</dependency>
+
+````
+
+properties-deve
+````
+spring.datasource.url=jdbc:mysql://localhost:3306/curso_spring
+spring.datasource.username=root
+spring.datasource.password=
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+
+spring.jpa.database-platform = org.hibernate.dialect.MySQL5Dialect
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+
+
+````
+
+
+
+
+
 ## CRUD
 
 Iniciando </br>
