@@ -4,6 +4,15 @@ Procfile
 ````
 web: java -Dserver.port=$PORT -Dspring.profiles.active=prod $JAVA_OPTS -jar target/cursomc-0.0.1-SNAPSHOT.jar
 ````
+properties-prod
+````
+spring.datasource.url=mysql://bd41b9eab7f536:029cbe02@us-cdbr-east-06.cleardb.net/heroku_1d4e14295c07216?reconnect=true
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.format_sql=false
+
+````
+
 
 Connect BD
 
