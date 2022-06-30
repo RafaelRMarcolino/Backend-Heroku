@@ -1,4 +1,21 @@
 # Api spring Heroku mysql
+
+Connect BD
+
+````
+
+$ heroku git:remote -a api-pring-test
+
+backup
+mysqldump -u root -p curso_spring > arquivo.sql
+
+url DataBase
+heroku config | grep CLEARDB_DATABASE_URL
+
+mysql --host=us-cdbr-east-06.cleardb.net --user=bd41b9eab7f536 --password=029cbe02 --reconnect heroku_1d4e14295c07216 < arquivo.sql
+````
+
+
 Dependency maven Mysql
 ````
 <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
